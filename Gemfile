@@ -6,6 +6,8 @@ gem 'rails', '3.0.3'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3-ruby', :require => 'sqlite3'
+# Listing 7.21 Adding Avatar image (using Gravatar)
+gem 'gravatar_image_tag', '1.0.0.pre2'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -29,9 +31,11 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 
 group :development do
 gem 'rspec-rails', '2.3.0'
+gem 'annotate-models', '1.0.4'
 end
 
 group :test do
 gem 'rspec', '2.3.0'
 gem 'webrat'
+gem 'factory_girl_rails', '1.0'
 end
